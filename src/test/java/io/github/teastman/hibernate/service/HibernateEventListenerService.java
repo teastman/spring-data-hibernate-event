@@ -1,14 +1,14 @@
-package com.github.teastman.hibernate.service;
+package io.github.teastman.hibernate.service;
 
 import org.hibernate.event.spi.PostUpdateEvent;
 import org.hibernate.event.spi.PreInsertEvent;
 import org.hibernate.event.spi.PreUpdateEvent;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
-import com.github.teastman.hibernate.annotation.HibernateEventListener;
-import com.github.teastman.hibernate.domain.ChildEntityA;
-import com.github.teastman.hibernate.domain.ChildEntityB;
-import com.github.teastman.hibernate.domain.ParentEntity;
+import io.github.teastman.hibernate.annotation.HibernateEventListener;
+import io.github.teastman.hibernate.domain.ChildEntityA;
+import io.github.teastman.hibernate.domain.ChildEntityB;
+import io.github.teastman.hibernate.domain.ParentEntity;
 
 @Service
 public class HibernateEventListenerService {

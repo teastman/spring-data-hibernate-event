@@ -1,4 +1,4 @@
-package com.github.teastman.hibernate.exception;
+package io.github.teastman.hibernate.exception;
 
 /**
  * Exception for when a method parameter does not inherit from a defined type.

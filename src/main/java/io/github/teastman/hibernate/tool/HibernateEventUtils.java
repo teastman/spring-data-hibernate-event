@@ -1,4 +1,4 @@
-package com.github.teastman.hibernate.tool;
+package io.github.teastman.hibernate.tool;
 
 import org.hibernate.event.spi.*;
 import org.hibernate.persister.entity.EntityPersister;

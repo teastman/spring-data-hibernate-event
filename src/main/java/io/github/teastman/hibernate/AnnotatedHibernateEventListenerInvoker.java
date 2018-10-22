@@ -1,8 +1,8 @@
-package com.github.teastman.hibernate;
+package io.github.teastman.hibernate;
 
-import com.github.teastman.hibernate.annotation.HibernateEventListener;
-import com.github.teastman.hibernate.exception.AssignableParameterException;
-import com.github.teastman.hibernate.exception.InvalidParameterCount;
+import io.github.teastman.hibernate.annotation.HibernateEventListener;
+import io.github.teastman.hibernate.exception.AssignableParameterException;
+import io.github.teastman.hibernate.exception.InvalidParameterCount;
 import org.hibernate.HibernateException;
 import org.hibernate.event.spi.*;
 import org.hibernate.persister.entity.EntityPersister;

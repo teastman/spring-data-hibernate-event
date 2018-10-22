@@ -1,11 +1,11 @@
-package com.github.teastman.hibernate.test;
+package io.github.teastman.hibernate.test;
 
-import com.github.teastman.hibernate.Application;
-import com.github.teastman.hibernate.domain.ChildEntityA;
-import com.github.teastman.hibernate.domain.ParentEntity;
-import com.github.teastman.hibernate.repository.ChildEntityARepository;
-import com.github.teastman.hibernate.repository.ParentEntityRepository;
-import com.github.teastman.hibernate.service.HibernateEventListenerService;
+import io.github.teastman.hibernate.Application;
+import io.github.teastman.hibernate.domain.ChildEntityA;
+import io.github.teastman.hibernate.domain.ParentEntity;
+import io.github.teastman.hibernate.repository.ChildEntityARepository;
+import io.github.teastman.hibernate.repository.ParentEntityRepository;
+import io.github.teastman.hibernate.service.HibernateEventListenerService;
 import org.hibernate.event.spi.PostUpdateEvent;
 import org.hibernate.event.spi.PreInsertEvent;
 import org.hibernate.event.spi.PreUpdateEvent;
@@ -18,6 +18,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.never;
@@ -40,6 +41,7 @@ public class AnnotationTests {
     public void create_parent_should_call_insert_method() {
         ParentEntity parentEntity = new ParentEntity();
         parentEntity = parentEntityRepository.save(parentEntity);
+        assertNotNull(parentEntity.getId());
         verify(service).handlePreInsert(eq(parentEntity), any(PreInsertEvent.class));
     }
 

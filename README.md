@@ -7,7 +7,7 @@ Download the jar through Maven:
 
 ```xml
 <dependency>
-    <groupId>com.github.teastman</groupId>
+    <groupId>io.github.teastman</groupId>
     <artifactId>spring-data-hibernate-event</artifactId>
     <version>1.0.0</version>
 </dependency>

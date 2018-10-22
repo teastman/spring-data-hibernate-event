@@ -1,4 +1,4 @@
-package com.github.teastman.hibernate.annotation;
+package io.github.teastman.hibernate.annotation;
 
 import java.lang.annotation.*;
 

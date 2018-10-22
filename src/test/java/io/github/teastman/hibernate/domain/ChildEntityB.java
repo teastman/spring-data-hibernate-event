@@ -1,4 +1,4 @@
-package com.github.teastman.hibernate.domain;
+package io.github.teastman.hibernate.domain;
 
 import javax.persistence.Entity;
 
