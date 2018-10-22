@@ -1,0 +1,32 @@
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+
+# Eclipse project folders
+.classpath
+.project
+.settings
+.idea
+
+# Maven output folder
+target
+data
+out
+
+# Binary files
+*.exe
+*.dll
+*.so*
+*.class
+*.war
+
+# Ignore atlassian plugin settings
+atlassian-ide-plugin.xml
+
+# NPM / Grunt / Karma
+test-results.xml
+npm-debug.log
+
+# Apple
+.DS_Store
