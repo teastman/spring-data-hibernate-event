@@ -45,6 +45,6 @@ public class HibernateEventUtils {
     }
 
     public static int getPropertyIndex(EntityPersister persister, String property){
-        return Arrays.asList(persister.getPropertyNames()).indexOf("tracking");
+        return Arrays.asList(persister.getPropertyNames()).indexOf(property);
     }
 }
