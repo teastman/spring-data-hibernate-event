@@ -9,7 +9,7 @@ Download the jar through Maven:
 <dependency>
     <groupId>io.github.teastman</groupId>
     <artifactId>spring-data-hibernate-event</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
