@@ -6,7 +6,7 @@ import java.lang.annotation.*;
  * Annotation that marks a method as a listener for hibernate spi events.
  *
  * <p>The first parameter of the annotated method must be the entity that
- * hibernate affected. The second parameter must be of type {@Link org.hibernate.event.spi.AbstractEvent AbstractEvent}
+ * hibernate affected. The second parameter must be of type org.hibernate.event.spi.AbstractEvent
  *
  * <p>It is also possible to use Spring's
  * {@link org.springframework.core.annotation.Order @Order} annotation to define the order
