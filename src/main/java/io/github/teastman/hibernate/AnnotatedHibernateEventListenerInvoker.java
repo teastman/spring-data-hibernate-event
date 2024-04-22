@@ -38,7 +38,7 @@ public class AnnotatedHibernateEventListenerInvoker implements
         PreInsertEventListener,
         PreDeleteEventListener,
         PreUpdateEventListener,
-        PostInsertEventListener,
+        PostCommitInsertEventListener,
         PostDeleteEventListener,
         PostUpdateEventListener,
         BeanPostProcessor {
@@ -88,6 +88,10 @@ public class AnnotatedHibernateEventListenerInvoker implements
     @Override
     public void onPostInsert(PostInsertEvent event) {
         onEvent(event, event.getEntity());
+    }
+
+    @Override
+    public void onPostInsertCommitFailed(PostInsertEvent postInsertEvent) {
     }
 
     @Override
